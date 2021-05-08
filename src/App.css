@@ -1,1 +1,38 @@
+body{
+    background-color: rgb(20,20,20);
+}
 
+.App{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.division-header{
+    margin-top: 50px;
+    width: 50vw;
+    height: 75px;
+    margin-left: 25vw;
+    font-size: 3em;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.champions-section{
+    margin-top: 5vh;
+    margin-left: 5vw;
+    display: grid;
+    width: 90vw;
+    padding: 1%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    row-gap: 10px;
+    height: calc(95vh - 150px);
+    background-color: antiquewhite;
+}
+
+.champions-section > .info{
+    height: 1fr;
+    width: 1fr;
+    border: 2px solid orangered;  
+}

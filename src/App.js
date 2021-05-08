@@ -3,9 +3,23 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        heerad
-      </header>
+        <div className="division-header">
+          Challenger
+        </div>
+        <div className="champions-section">
+          <div className="info"></div>
+          <div className="info"></div>
+          <div className="info"></div>
+          <div className="info"></div>
+          <div className="info"></div>
+          <div className="info"></div>
+          <div className="info"></div>
+          <div className="info"></div>
+          <div className="info"></div>
+          <div className="info"></div>
+          <div className="info"></div>
+        </div>
+
     </div>
   );
 }
