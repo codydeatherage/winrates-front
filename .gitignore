@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+#security
+/src/auth.json
+
 # testing
 /coverage
 
