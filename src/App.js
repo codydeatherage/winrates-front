@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 
 const App = () => {
   const [champList, setChampList] = useState('');
+  const [splashes, setSplashes] = useState('');
 
   useEffect(() => {
     if (!champList) {
@@ -22,6 +23,10 @@ const App = () => {
         }
         setChampList(allChamps);
       })
+      .then(async() => {
+        const fetch = await axios.get('http://ddragon.leagueoflegends.com/cdn/11.10.1/img/champion/Aatrox.png');
+       /*  http://ddragon.leagueoflegends.com/cdn/11.10.1/img/champion/Aatrox.png */
+      })
   }
 
   if (champList) {
@@ -31,7 +36,7 @@ const App = () => {
           Challenger
           </div>
         <div className="champions-section">
-          {champList.map((name, index) => <ChampionsStats name={name} key={index}></ChampionsStats>)}
+          {champList.map((name, index) => <ChampionsStats img={splashes} name={name} key={index}></ChampionsStats>)}
         </div>
 
       </div>
