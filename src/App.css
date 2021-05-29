@@ -32,7 +32,16 @@ body{
 }
 
 .champions-section > .info{
+    display: flex;
     height: 1fr;
-    width: 1fr;
+    width: auto;
     border: 2px solid orangered;  
+    padding-left: 0;
 }
+
+.champions-section > .info > img{
+    left:0;
+    margin-left: 0;
+}
+
+
