@@ -1,12 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import InfoPage from './components/InfoPage';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Route
+        exact = {true}
+        path="/"
+        component={App}
+      />
+      <Route
+      exact={true}
+      path="/:name"
+      component={InfoPage}
+      />
+      
+    {/*   <App /> */}
+    </Router>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,5 +1,5 @@
 import './App.css';
-import ChampionsStats from './components/ChampionStats'
+import ChampionsSelectItem from './components/ChampionSelectItem'
 import axios from 'axios';
 import { useEffect, useState } from 'react'
 
@@ -35,7 +35,7 @@ const App = () => {
           Challenger
           </div>
         <div className="champions-section">
-          {champList.map((name, index) => <ChampionsStats name={name} key={index}></ChampionsStats>)}
+          {champList.map((name, index) => <ChampionsSelectItem name={name} key={index}></ChampionsSelectItem>)}
         </div>
 
       </div>

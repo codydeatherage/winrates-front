@@ -43,5 +43,18 @@ body{
     left:0;
     margin-left: 0;
 }
+.splash-art-banner{
+    width: 98%;
+    margin-left: calc(1% - 2px);
+   /*  height: 45%; */
+    border: 2px solid red;
+   /*  zoom: 0.5; */
+}
+.splash-art-banner > img{
+    width: 100%;
+    height: 50%;
+  /*   width: max-content; */
+ /*    max-height: 35%; */
 
+}
 
